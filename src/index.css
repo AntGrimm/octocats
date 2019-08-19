@@ -10,3 +10,76 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgb(199, 195, 195) 1px solid;
+}
+
+.left-side-nav-bar {
+  display: flex;
+  padding: 1rem 0rem 1rem 1rem;
+  align-items: center;
+}
+
+.right-side-nav-bar {
+  display: flex;
+  padding: 1rem 1rem 1rem 0rem;
+  align-items: center;
+}
+
+.fa-github {
+  font-size: 2rem;
+}
+
+.octodex {
+  display: flex;
+  color: #24292e;
+  padding: 0rem 1rem 0rem 0.5rem;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  color: #586069;
+  font-size: 14px;
+  padding: 0rem 0.5rem 0rem 1rem;
+  text-decoration: none;
+}
+
+.faq {
+  display: flex;
+  color: #24292e;
+  font-size: 14px;
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+}
+
+.faq:hover {
+  text-decoration: underline;
+}
+
+.follow-twitter {
+  display: flex;
+  padding: 0rem 1rem 0rem 0rem;
+  color: #24292e;
+  text-decoration: none;
+}
+
+.follow-twitter:hover {
+  text-decoration: underline;
+}
+
+.back-to-git {
+  display: flex;
+  padding: 0rem 0rem 0rem 0.5rem;
+  color: #24292e;
+  text-decoration: none;
+}
+
+.back-to-git:hover {
+  text-decoration: underline;
+}
