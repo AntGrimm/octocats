@@ -5,13 +5,13 @@ class Octocat extends Component {
     return (
       <li>
         <img src={this.props.imageUrl} alt={this.props.imageAlt} />
-        <section>
-          <h2>{this.props.number}</h2>
-          <q>{this.props.contributor}</q>
+        <section class="prop-section">
+          <h3 class="prop-number">{this.props.number}</h3>&nbsp;
+          <h3>{this.props.contributor}</h3>
         </section>
       </li>
     )
   }
 }
 
-export default Character
+export default Octocat

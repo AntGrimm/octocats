@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import OctocatArray from './components/OctocatArray'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
             </a>
           </div>
         </nav>
+        <OctocatArray />
       </main>
     )
   }
