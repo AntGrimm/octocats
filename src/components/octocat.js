@@ -3,13 +3,19 @@ import React, { Component } from 'react'
 class Octocat extends Component {
   render() {
     return (
-      <li>
-        <img src={this.props.imageUrl} alt={this.props.imageAlt} />
+      <main class="prop-main">
+        <li>
+          <img
+            class="prop-image"
+            src={this.props.imageUrl}
+            alt={this.props.imageAlt}
+          />
+        </li>
         <section class="prop-section">
-          <h3 class="prop-number">{this.props.number}</h3>&nbsp;
-          <h3>{this.props.contributor}</h3>
+          <h4 class="prop-number">{this.props.number}</h4>&nbsp;
+          <h4>{this.props.contributor}</h4>
         </section>
-      </li>
+      </main>
     )
   }
 }

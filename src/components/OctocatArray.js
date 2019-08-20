@@ -7,10 +7,16 @@ import daftPunk from '../images/daftpunktocat-thomas.gif'
 import film from '../images/filmtocats.png'
 import flint from '../images/Fintechtocat.png'
 import investocat from '../images/privateinvestocat.jpg'
-import puddle from '../images/puddle_jumper_octodex.jpg'
+import mona from '../images/mona-lovelace.jpg'
 import sentry from '../images/Sentrytocat_octodex.jpg'
 
 const octocats = [
+  {
+    number: '#133:',
+    contributor: 'mona-lovelace',
+    imageUrl: mona,
+    imageAlt: 'Mona Lovelace'
+  },
   {
     number: '#143:',
     contributor: 'boxertocat_octodex',
@@ -30,31 +36,25 @@ const octocats = [
     imageAlt: 'daft punk thomas gif'
   },
   {
-    number: '#147:',
+    number: '#146:',
     contributor: 'filmtocats',
     imageUrl: film,
     imageAlt: 'film to Cat'
   },
   {
-    number: '#147:',
+    number: '#148:',
     contributor: 'Fintechtocat',
     imageUrl: flint,
     imageAlt: 'Fintech to Cat'
   },
   {
-    number: '#147:',
+    number: '#122:',
     contributor: 'privateinvestocat',
     imageUrl: investocat,
     imageAlt: 'Private invest to Cat'
   },
   {
-    number: '#147:',
-    contributor: 'puddle_jumper_octodex',
-    imageUrl: puddle,
-    imageAlt: 'puddle jumper octodex'
-  },
-  {
-    number: '#147:',
+    number: '#145:',
     contributor: 'sentrytocat_octodex',
     imageUrl: sentry,
     imageAlt: 'sentry to Cat'
@@ -64,18 +64,42 @@ const octocats = [
 class OctocatArray extends Component {
   render() {
     return (
-      <ul>
-        {octocats.map(octocat => {
-          return (
-            <Octocat
-              number={octocat.number}
-              contributor={octocat.contributor}
-              imageAlt={octocat.imageAlt}
-              imageUrl={octocat.imageUrl}
-            />
-          )
-        })}
-      </ul>
+      <main>
+        <nav class="nav-bar">
+          <div class="left-side-nav-bar">
+            <i class="fab fa-github" />
+            <a href="#" class="octodex">
+              Octodex
+            </a>
+            <a href="#" class="home">
+              Home
+            </a>
+            <a href="#" class="faq">
+              FAQ
+            </a>
+          </div>
+          <div class="right-side-nav-bar">
+            <a href="#" class="follow-twitter">
+              Follow us on Twitter
+            </a>
+            <a href="#" class="back-to-git">
+              Back to GitHub.com
+            </a>
+          </div>
+        </nav>
+        <ul>
+          {octocats.map(octocat => {
+            return (
+              <Octocat
+                number={octocat.number}
+                contributor={octocat.contributor}
+                imageAlt={octocat.imageAlt}
+                imageUrl={octocat.imageUrl}
+              />
+            )
+          })}
+        </ul>
+      </main>
     )
   }
 }
